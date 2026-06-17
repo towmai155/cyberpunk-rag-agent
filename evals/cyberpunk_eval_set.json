@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cp_watch_without_game",
+    "question": "没玩过 Cyberpunk 2077 能看边缘行者吗？",
+    "expected_keywords": [["独立"], ["不需要先玩", "直接看懂", "不依赖游戏", "新观众能看懂", "能看懂主线"]],
+    "expected_sources": ["cyberpunk_edgerunners_rag_kb_pack(1)"]
+  },
+  {
+    "id": "cp_sandevistan",
+    "question": "斯安威斯坦是什么？",
+    "expected_keywords": [["义体"], ["Sandevistan", "斯安威斯坦"], ["时间", "变慢", "高速"]],
+    "expected_sources": ["cyberpunk_edgerunners_rag_kb_pack(1)"]
+  },
+  {
+    "id": "cp_lucy_moon",
+    "question": "露西为什么想去月球？",
+    "expected_keywords": [["露西"], ["月球"], ["逃离", "远离", "逃亡", "摆脱"]],
+    "expected_sources": ["cyberpunk_edgerunners_rag_kb_pack(1)"]
+  },
+  {
+    "id": "cp_song_radio",
+    "question": "I Really Want to Stay at Your House 出自哪个电台？",
+    "expected_keywords": [["98.7"], ["Body Heat Radio"], ["I Really Want to Stay at Your House", "歌曲"]],
+    "expected_sources": ["cyberpunk_edgerunners_rag_kb_pack(1)"]
+  },
+  {
+    "id": "cp_episode_06",
+    "question": "第6集为什么是转折点？",
+    "expected_keywords": [["曼恩"], ["转折", "结构性"], ["赛博精神病", "崩溃"]],
+    "expected_sources": ["cyberpunk_edgerunners_rag_kb_pack(1)"]
+  }
+]

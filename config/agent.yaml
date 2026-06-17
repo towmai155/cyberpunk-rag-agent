@@ -1,0 +1,15 @@
+# MCP server 配置。声明后会自动注入到 Agent 工具列表。
+# 当前接入 filesystem MCP，用于让 Agent 通过 MCP 协议查看知识库和项目文档。
+# Windows 下使用 cmd /c npx.cmd，避免 PowerShell 执行策略拦截 npx.ps1。
+mcp_servers:
+  filesystem:
+    enabled: true
+    transport: stdio
+    command: cmd
+    args:
+      - /c
+      - npx.cmd
+      - -y
+      - "@modelcontextprotocol/server-filesystem"
+      - "D:/langchain-agent-master/langchain-agent-master/data"
+      - "D:/langchain-agent-master/langchain-agent-master/docs"

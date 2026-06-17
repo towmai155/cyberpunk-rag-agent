@@ -1,0 +1,350 @@
+# 09_鸣潮联动与边缘幻梦剧情
+生成日期：2026-06-16
+资料快照：以《鸣潮》3.4 版本 The Dream Not Dreamed 已公开官方信息、应用商店更新说明、公开 Wiki 索引与媒体整理为基础。
+说明：本文件为 RAG 入库用原创摘要，不复制游戏台词；涉及完整结局、David 再会、正史争议的内容标记为 Full 剧透。
+
+一、资料来源与可信度
+==========
+1. 第一优先级：Kuro Games / Wuthering Waves 官方公告、3.4 版本维护说明、角色揭示、新敌人公告。
+2. 第二优先级：官方 App Store 更新说明，用于核对联动区域、Echo、敌人、曲目、称号、WavesLine 外观等列表。
+3. 第三优先级：PC Gamer、RPG Site 等媒体汇总，用于核对卡池时间、免费 Rebecca、联动活动结构。
+4. 补充索引：Wuthering Waves Wiki / Fandom，用于地点名、任务名、登场角色列表、区域描述等索引信息。
+5. 正史争议：社区流传的‘全篇 canon’说法有争议，知识库默认采用谨慎口径：这是官方合作内容，但不直接宣称改写动画本篇正史。
+
+
+二、联动总览
+======
+- 联动名称：Wuthering Waves x Cyberpunk: Edgerunners。
+- 版本名称：Version 3.4 - The Dream Not Dreamed；中文社区常称 3.4 未选择的梦。
+- 开启时间：2026-06-08 起，核心活动集中在 3.4 版本周期。
+- 联动主线：At Dream's Edge / 边缘幻梦，属于 Chapter III Side Story / Episodic Quest。
+- 联动区域：Somnoire: Night City，一个由 Lucy 的梦与噩梦显影出的夜城拟像。
+- 可玩角色：Lucy、Rebecca，均为 5 星联动共鸣者。
+- 核心敌人：Nightmare: Adam Smasher，以及 Corpo 系梦魇敌人。
+- 核心音乐：I Really Want to Stay at Your House 作为 Collab Track 出现。
+
+
+三、联动内容清单
+========
+1. 联动角色 Lucy：5 星，Spectro / Pistols；通过 Dreaming Upon the Moon 联动角色唤取获得。
+2. 联动角色 Rebecca：5 星，Electro / Pistols；通过 Rekindled Cinders of Rage 联动角色唤取获得，活动期间也可通过 Instant Flashlight 免费领取一只。
+3. 联动武器：Spectral Trigger 与 Skull Thrasher，对应 Lucy、Rebecca 的 5 星佩枪武器。
+4. 联动区域：Somnoire: Night City，包含 Cherry Blossom Market、Lucy and David's Apartment、Illusion's End 等可索引地点。
+5. 联动剧情：At Dream's Edge / 边缘幻梦。
+6. 联动 Echo：Reminiscence - Nightmare: Adam Smasher。
+7. 联动 Sonata：Shadow of Shattered Dreams。
+8. 联动敌人：Nightmare: Armed Corpo、Nightmare: Security Corpo、Nightmare: Special Response Corpo。
+9. 联动活动：Night City Roaming、Instant Flashlight、Gifts of Dreamchasers、Matrix Reform、Sweetdream Tuning、Depths of Illusive Realm: Dreamchasers。
+10. 其他奖励：Collab Track: I Really Want to Stay at Your House；Collab Sigil: Where Did Your Love Go?；Collab Title: Legend Smasher；David Martinez WavesLine 聊天气泡；I miss you all the time WavesLine 背景。
+
+
+四、剧情详解：边缘幻梦 At Dream's Edge
+===========================
+【剧透提示】本节含 S1-Full 级别剧透，未看《边缘行者》动画或未体验联动剧情时建议先跳过。
+1. 事件入口：星炬学院/学院相关区域中突然出现 Somnoire 之门，Mornye 请求漂泊者调查。这个设定说明联动不是无解释穿越，而是通过《鸣潮》的梦境系统接入。
+2. 进入梦境：漂泊者进入 Somnoire 深处，遇见 Lucy 与 Rebecca。官方剧情说明把她们称为来自另一个世界的访客，并强调剧情发生在现实与梦的边缘。
+3. 梦境夜城：Somnoire: Night City 由 Lucy 的梦与噩梦生成，同时混合 Lahai-Roi 相关人物的梦境碎片。它不是现实夜之城复制品，而是记忆、创伤与愿望的拟像。
+4. 危机源头：Nightmare Tacet Discords 从梦境中涌出，它们以公司武装、特殊反应部队和 Adam Smasher 的形态出现。这里把《赛博朋克》的公司暴力转译成《鸣潮》的梦魇声骸。
+5. Adam Smasher：Nightmare: Adam Smasher 被官方描述为追猎 Lucy 的 Nightmare Tacet Discord。他不是普通 Boss，而是 Lucy 无法轻易摆脱的创伤符号。
+6. Lucy 的核心：Lucy 的月球梦、与大卫的关系、逃离夜之城的愿望共同构成这个梦境空间的情绪中心。联动的重点不是让她变成战斗角色，而是让她重新面对失去。
+7. Rebecca 的作用：Rebecca 在剧情和玩法中回归，承接了动画里边缘行者小队的直率、暴烈与陪伴感。她的免费领取也让动画粉丝能更低门槛进入联动。
+8. David 的处理：公开任务索引和奖励显示 David Martinez 相关内容出现。知识库应把它解释为梦境/记忆层面的再会与告别，不应回答成大卫在动画本篇中复活。
+9. 梦醒解释：这段剧情可以称作‘梦境式后日谈’或‘情绪补完’。它给了 Lucy 和玩家一次 closure，但不把原作悲剧改写为普通 happy ending。
+10. 主题总结：The Dream Not Dreamed 的重点是未能实现的梦、未完成的约定和梦境中的短暂重逢。它强化《边缘行者》的悲剧，而不是取消悲剧。
+
+
+五、关键设定解释
+========
+- Somnoire：可理解为《鸣潮》世界中的梦境/幻梦系统，是联动剧情发生的机制基础。
+- Somnoire: Night City：由 Lucy 的记忆、愿望与噩梦构成的夜之城拟像。
+- Nightmare Tacet Discord：梦魇化敌人。联动中，公司武装和 Adam Smasher 都被转译成这种敌人。
+- Hack - Shifting：联动角色与套装效果相关的玩法关键词，适合放入构筑检索。
+- Collab Track：联动曲目。I Really Want to Stay at Your House 是核心情绪曲目。
+- WavesLine 外观：聊天气泡/背景类外观。David Martinez 和 I miss you all the time 奖励属于强情绪指向内容。
+
+
+六、正史与剧情边界
+=========
+1. 可以确定：这是官方推出的《鸣潮》x《赛博朋克：边缘行者》联动，有正式剧情、角色、地图、敌人和奖励。
+2. 不应武断确定：整个联动剧情完全成为动画本篇主线正史，或直接改写《边缘行者》结局。
+3. 推荐回答：联动是官方合作内容，可以视作梦境式后日谈/情绪补完；它让 Lucy 与玩家面对遗憾，但不等于大卫、Rebecca 在动画本篇中复活。
+4. 若用户追问 canon：说明社区存在争议，建议区分‘官方合作内容’、‘编剧参与/回应’、‘动画本篇正史改写’三件事。
+
+
+七、RAG 入库建议
+==========
+- doc_type：鸣潮联动与边缘幻梦剧情。
+- 召回关键词：鸣潮、WuWa、Wuthering Waves、联动、赛博朋克、边缘行者、The Dream Not Dreamed、未选择的梦、At Dream's Edge、边缘幻梦、Somnoire: Night City、Lucy、Rebecca、David、Adam Smasher、I Really Want to Stay at Your House。
+- 剧透等级：S0 放活动与卡池；S1 放进入梦境和遇见角色；S2 放 Adam Smasher 与 Lucy 创伤；Full 放 David 再会、告别、正史争议。
+- 检索策略：问‘怎么获得角色’召回玩法 chunk；问‘剧情讲了什么’召回 At Dream's Edge chunk；问‘大卫复活了吗’召回纠错 chunk；问‘这算正史吗’召回正史争议 chunk。
+
+
+八、FAQ 20问
+=========
+1. Q01：鸣潮和边缘行者联动什么时候开？
+- 联动随《鸣潮》3.4 版本 The Dream Not Dreamed 于 2026-06-08 开启。角色与活动大多集中在 3.4 版本期间，部分剧情/区域内容按官方说明可作为版本内容长期存在或按活动规则开放。
+2. Q02：联动剧情叫什么？
+- 英文名为 At Dream's Edge，中文可称边缘幻梦，是 Chapter III Side Story / Episodic Quest。它是本次联动的主剧情入口。
+3. Q03：联动地图叫什么？
+- 主要联动区域为 Somnoire: Night City。它是《鸣潮》Somnoire 系统中由 Lucy 的梦与噩梦生成的夜城拟像。
+4. Q04：露西能抽吗？
+- 可以。Lucy 是 5 星联动共鸣者，属性/武器为 Spectro / Pistols，可通过 Dreaming Upon the Moon 联动角色唤取获得。
+5. Q05：丽贝卡能免费拿吗？
+- 可以。公开资料显示活动期间玩家达到联合等级 10 后，可通过 Instant Flashlight 领取 5 星 Rebecca。
+6. Q06：Rebecca 也有卡池吗？
+- 有。Rebecca 也作为联动 5 星共鸣者登场，除免费一只外，还可通过 Rekindled Cinders of Rage 联动角色唤取继续获取。
+7. Q07：联动里有亚当重锤吗？
+- 有。官方公告列出 Nightmare: Adam Smasher，他是追猎 Lucy 的 Nightmare Tacet Discord，也是主要联动挑战之一。
+8. Q08：联动里有大卫吗？
+- 有相关内容。公开任务索引列出 David Martinez 为 At Dream's Edge 登场角色，官方奖励也列出 David Martinez 的 WavesLine 外观。但这应按 Full 剧透处理，并解释为梦境/记忆层面的再会，而不是原作复活。
+9. Q09：联动算边缘行者第二季吗？
+- 不算。它是《鸣潮》x《赛博朋克：边缘行者》的游戏联动剧情，不是动画第二季。它更像梦境式后日谈和粉丝情绪补完。
+10. Q10：没玩过鸣潮能看懂联动吗？
+- 能大致看懂 Lucy、Rebecca 与夜之城情绪线，但最好先了解《鸣潮》的 Somnoire/梦境系统和漂泊者视角，否则会对为什么能进入梦境夜城产生疑问。
+11. Q11：没看过边缘行者能玩联动吗？
+- 能玩，但会损失大量情绪冲击。尤其是 Lucy 的月球梦、David 的意义、Rebecca 的粉丝情感和 Adam Smasher 的压迫感，都来自动画本篇。
+12. Q12：I Really Want to Stay at Your House 加进去了吗？
+- 加了。官方更新信息将其列为 Collab Track。对边缘行者粉丝来说，这是最关键的情绪曲目之一。
+13. Q13：联动剧情会改动画结局吗？
+- 不应这么理解。更稳妥的说法是：联动通过 Somnoire 梦境让 Lucy 面对失去与未完成的愿望，是梦境式再会/告别，不是改写动画本篇结局。
+14. Q14：Somnoire: Night City 是真实夜之城吗？
+- 不是完全意义上的真实夜之城，而是由 Lucy 的梦与噩梦、夜城居民记忆以及 Lahai-Roi 相关梦境混合出的拟像空间。
+15. Q15：Night City Roaming 是什么？
+- 它是联动主活动之一，包含剧情、角色试用、梦魇挑战等内容，可视为 3.4 联动活动总入口。
+16. Q16：Matrix Reform 是什么？
+- 它是联动解谜活动，黑客风格明显，剧情上与 Lucy 请求玩家突破梦境、控制外溢频率有关。
+17. Q17：联动和 Cyberpunk 2077 游戏有什么关系？
+- 联动引用了夜之城、公司武装、Adam Smasher、I Really Want to Stay at Your House 等动画与游戏共同符号。它不是 2077 主线，但会强化玩家对夜之城宇宙的理解。
+18. Q18：联动适合放在 RAG 哪个模块？
+- 建议独立放入‘鸣潮联动与边缘幻梦剧情’模块，和动画分集、游戏本体、电台音乐、角色解析分开。
+19. Q19：这个模块最适合演示什么问题？
+- 适合演示：‘联动剧情是不是正史’、‘大卫是不是复活’、‘Somnoire 夜城是什么’、‘Rebecca 怎么免费拿’、‘为什么听到那首歌会破防’。
+20. Q20：回答联动问题最容易犯什么错？
+- 最容易犯三类错：把梦境再会说成复活；把官方合作说成绝对正史；只讲抽卡不讲剧情与世界观。
+
+
+九、RAG Chunks
+============
+## edgerunners_0301 联动版本总览：The Dream Not Dreamed / 未选择的梦
+《鸣潮》3.4 版本联动《赛博朋克：边缘行者》，英文版本名为 The Dream Not Dreamed。联动于 2026-06-08 开启，核心内容包括联动剧情 At Dream's Edge（边缘幻梦）、联动区域 Somnoire: Night City、可玩共鸣者 Lucy 与 Rebecca、Nightmare: Adam Smasher 挑战、联动音乐与一系列限时活动。
+标签：联动总览, 3.4, The Dream Not Dreamed, 未选择的梦；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_collab_info, kuro_patch_3_4, rpgsite_wuwa_3_4
+## edgerunners_0302 资料可信度分层
+本模块优先采用《鸣潮》官方公告、版本维护说明、角色揭示、官方应用商店更新说明；次级采用 PC Gamer、RPG Site 等新闻媒体整理；剧情与地点细节采用 Wuthering Waves Wiki/Fandom 作为索引补充。凡涉及‘是否正史’、完整台词、隐藏成就、玩家解读的内容，默认标记为待核验或社区解释，不作为绝对官方结论。
+标签：资料来源, 可信度, 官方文档；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk, pcgamer_banners, rpgsite_wuwa_3_4
+## edgerunners_0303 为什么要把鸣潮联动放进边缘行者知识库
+这次联动不是单纯皮肤或抽卡活动，而是把 Lucy、Rebecca、Night City 意象、Adam Smasher、I Really Want to Stay at Your House 等动画与游戏核心符号接入《鸣潮》的 Somnoire 梦境系统。对 RAG 项目来说，它能回答‘动画完结后的情绪延伸’、‘联动剧情是否改变原作结局’、‘游戏和动画设定如何跨作品融合’等新问题。
+标签：RAG价值, 跨作品, 剧情延伸；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0304 联动可玩角色：Lucy
+Lucy 作为 5 星联动共鸣者登场。官方维护说明与应用商店更新将其标记为 Spectro / Pistols（衍射 / 佩枪），获取途径为 Dreaming Upon the Moon 联动角色唤取。她的设计重点围绕网行者身份、黑客干扰和单分子线等赛博朋克元素。
+标签：Lucy, 露西, 联动角色, 衍射, 佩枪；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_lucy_reveal, kuro_maintenance_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0305 联动可玩角色：Rebecca
+Rebecca 作为 5 星联动共鸣者登场，官方更新信息将其标记为 Electro / Pistols（导电 / 佩枪）。她可通过 Rekindled Cinders of Rage 联动角色唤取获得，同时活动期间玩家达到联合等级 10 后可通过 Instant Flashlight 领取一只 Rebecca。
+标签：Rebecca, 丽贝卡, 联动角色, 导电, 佩枪, 免费领取；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_rebecca_reveal, kuro_maintenance_3_4, pcgamer_banners, rpgsite_wuwa_3_4
+## edgerunners_0306 联动卡池时间与货币
+Lucy 与 Rebecca 的联动角色唤取在 3.4 版本期间开放，媒体整理时间为 2026-06-08 至 2026-07-09。联动角色池使用 Dreamcatcher Tide，联动武器池使用 Shadowforge Tide，且与常规限定角色池的保底不共享。
+标签：卡池, 唤取, Dreamcatcher Tide, Shadowforge Tide, 保底；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：pcgamer_banners
+## edgerunners_0307 联动武器：Spectral Trigger 与 Skull Thrasher
+Lucy 与 Rebecca 对应的联动 5 星佩枪武器分别为 Spectral Trigger 与 Skull Thrasher。它们是联动武器唤取的核心目标，适合放入知识库的‘角色构筑/抽取建议’子模块，而不要和动画剧情 chunk 混在一起。
+标签：联动武器, Spectral Trigger, Skull Thrasher, 构筑；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：pcgamer_banners, app_store_wuwa_cyberpunk
+## edgerunners_0308 Rebecca 为什么适合做新手入口
+Rebecca 在联动期间有免费领取途径，且角色形象在动画粉丝中辨识度高。RAG 助手回答‘只为了边缘行者入坑鸣潮要做什么’时，应优先提示：达到联合等级 10、领取 Rebecca、再体验 At Dream's Edge 和 Night City Roaming。
+标签：新手入坑, Rebecca, 免费角色, 联合等级10；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：pcgamer_banners, rpgsite_wuwa_3_4
+## edgerunners_0309 联动剧情：At Dream's Edge / 边缘幻梦
+At Dream's Edge 是 3.4 版本的联动剧情，类型为 Chapter III Side Story / Episodic Quest。公开资料显示：学院中突然出现 Somnoire 之门，Mornye 请求漂泊者调查；漂泊者进入梦境深处，遇见来自另一个世界的 Lucy 与 Rebecca，并在现实与梦的边缘对抗 Nightmare Tacet Discords。
+标签：At Dream's Edge, 边缘幻梦, 联动剧情, 剧情入口；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, wuwa_wiki_at_dreams_edge
+## edgerunners_0310 联动区域：Somnoire: Night City
+Somnoire: Night City 是 3.4 联动区域。Wuthering Waves Wiki 将其描述为由 Lucy 这位前 Night City 居民的梦与噩梦诞生的 Somnoire 地点；它同时混合了 Night City 居民与 Lahai-Roi 星炬学院师生的梦境，是一个霓虹夜城的拟像空间。
+标签：Somnoire: Night City, 梦境夜城, 联动区域, Lucy记忆；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_somnoire, kuro_patch_3_4
+## edgerunners_0311 Somnoire: Night City 的地图意义
+Somnoire: Night City 不是把夜之城原封不动搬到索拉里斯，而是《鸣潮》梦境机制与 Lucy 记忆的混合拟像。它适合解释为：夜之城的创伤、愿望和未完成的梦，在《鸣潮》的 Somnoire 系统里被重新显影。
+标签：地图解析, 梦境拟像, 夜之城, 索拉里斯；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_somnoire
+## edgerunners_0312 联动区域可索引地点
+Somnoire: Night City 的公开地点包括 Cherry Blossom Market、Lucy and David's Apartment、Illusion's End。它们分别适合召回‘夜之城日常/日本街意象’、‘露西与大卫关系’、‘月球与未完成之梦’等解析问题。
+标签：地点索引, Cherry Blossom Market, Lucy and David's Apartment, Illusion's End；剧透等级：S2；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_somnoire
+## edgerunners_0313 联动敌人：Nightmare: Adam Smasher
+官方新敌人公告将 Nightmare: Adam Smasher 描述为追猎 Lucy 的 Nightmare Tacet Discord。这个设定把动画中的最终压迫者转译成《鸣潮》系统中的梦魇声骸/梦魇残象，适合回答‘亚当重锤为什么又出现’的问题。
+标签：Nightmare Adam Smasher, 亚当重锤, 梦魇, 敌人；剧透等级：S2；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_adam_smasher, kuro_patch_3_4
+## edgerunners_0314 联动敌人：Corpo 系敌人
+3.4 更新资料列出了 Nightmare: Armed Corpo、Nightmare: Security Corpo、Nightmare: Special Response Corpo 等联动敌人。它们将《赛博朋克》里的公司武装、安保与特殊反应部队符号，转译为《鸣潮》的梦魇敌人。
+标签：Corpo, 公司敌人, Armed Corpo, Security Corpo, Special Response Corpo；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：app_store_wuwa_cyberpunk, kuro_patch_3_4
+## edgerunners_0315 联动 Echo 与 Sonata：Shadow of Shattered Dreams
+3.4 更新加入 Reminiscence - Nightmare: Adam Smasher 作为联动 Echo，并加入 Shadow of Shattered Dreams 套装效果。它与 Lucy、Rebecca 的 Hack - Shifting 机制相关，适合做构筑和玩法检索，不应和纯剧情解析混为一类。
+标签：Echo, 声骸, Shadow of Shattered Dreams, Hack - Shifting；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：app_store_wuwa_cyberpunk, kuro_patch_3_4
+## edgerunners_0316 Night City Roaming
+Night City Roaming 是 3.4 的主要联动活动之一，包含 Episodic Quest、联动角色试用、Nightmare Challenge 等内容。RAG 中可作为‘活动总入口’chunk，回答玩家‘联动期间先做什么’。
+标签：Night City Roaming, 活动入口, 联动活动；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：rpgsite_wuwa_3_4, kuro_patch_3_4
+## edgerunners_0317 Instant Flashlight
+Instant Flashlight 是联动特殊登录/领取活动，核心奖励是 5 星共鸣者 Rebecca。用户问‘丽贝卡怎么拿’时，应优先召回此 chunk，并提示需要满足活动期间与联合等级 10 条件。
+标签：Instant Flashlight, Rebecca, 免费领取, 联合等级10；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：rpgsite_wuwa_3_4, pcgamer_banners
+## edgerunners_0318 Gifts of Dreamchasers
+Gifts of Dreamchasers 是 10 日登录活动，公开资料显示奖励包含 Dreamcatcher Tide 等联动抽取资源。它适合回答‘不氪金能拿到哪些联动资源’。
+标签：Gifts of Dreamchasers, 登录奖励, Dreamcatcher Tide；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, rpgsite_wuwa_3_4
+## edgerunners_0319 Matrix Reform
+Matrix Reform 是 3.4 的联动解谜活动，主题上对应赛博朋克中的黑客/矩阵/入侵意象。剧情说明中 Lucy 会请求玩家协助突破梦境，以控制 Somnoire 中外溢的问题。
+标签：Matrix Reform, 黑客解谜, Lucy, 梦境入侵；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4
+## edgerunners_0320 Sweetdream Tuning
+Sweetdream Tuning 与联动角色/武器唤取同步开放，玩家在联动唤取达到一定次数后可领取额外奖励。RAG 助手回答抽卡规划时，应说明它属于联动投入返利，不是剧情必做内容。
+标签：Sweetdream Tuning, 唤取返利, 抽卡规划；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, rpgsite_wuwa_3_4
+## edgerunners_0321 Depths of Illusive Realm: Dreamchasers
+Depths of Illusive Realm: Dreamchasers 是 3.4 中与 Somnoire 门扉、梦境危机相关的特殊活动。它可以归入‘联动玩法补充’，用于回答玩家问‘除了剧情还有哪些梦境玩法’。
+标签：Depths of Illusive Realm, Dreamchasers, 梦境玩法；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4
+## edgerunners_0322 联动曲目：I Really Want to Stay at Your House
+3.4 官方更新信息将 I Really Want to Stay at Your House 列为 Collab Track。它在《赛博朋克：边缘行者》动画中是最具情绪辨识度的歌曲之一，放入《鸣潮》联动能直接触发露西、大卫、月球与结局记忆。
+标签：I Really Want to Stay at Your House, 联动曲目, 音乐, Lucy, David；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_maintenance_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0323 联动印记：Where Did Your Love Go?
+官方更新信息列出 Collab Sigil: Where Did Your Love Go?。这个标题与联动的怀念、失去、告别主题高度一致，适合放在‘音乐与情绪符号’子库里。
+标签：Where Did Your Love Go, Collab Sigil, 情绪符号；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：app_store_wuwa_cyberpunk
+## edgerunners_0324 联动称号：Legend Smasher
+官方更新信息列出 Collab Title: Legend Smasher。它一方面指向 Adam Smasher，另一方面也回应夜之城‘传奇’叙事，适合和‘别用活法出名，要用死法出名’这类主题一起召回。
+标签：Legend Smasher, 称号, 亚当重锤, 传奇；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：app_store_wuwa_cyberpunk
+## edgerunners_0325 WavesLine 外观：David Martinez 与 I miss you all the time
+官方更新信息列出 David Martinez 聊天气泡与 I miss you all the time 聊天背景。这类奖励不是单纯装饰，而是把动画结局后的怀念情绪直接放入玩家界面，适合回答‘联动为什么让粉丝破防’。
+标签：WavesLine, David Martinez, I miss you all the time, 聊天背景；剧透等级：Full；范围：鸣潮联动 / The Dream Not Dreamed；来源：app_store_wuwa_cyberpunk
+## edgerunners_0326 剧情节点 1：Somnoire 之门出现
+联动剧情的起点是学院中突然出现 Somnoire 之门，Mornye 请求漂泊者协助调查。这个设计把《鸣潮》主线的梦境/学院系统作为跨作品入口，而不是让 Lucy 与 Rebecca 无解释地直接降临。
+标签：剧情节点, Somnoire之门, Mornye, 学院；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_at_dreams_edge, kuro_patch_3_4
+## edgerunners_0327 剧情节点 2：进入梦境夜城
+漂泊者进入 Somnoire 深处后，遇见来自另一个世界的 Lucy 与 Rebecca。官方任务简介强调‘现实与梦的边缘’，说明剧情并不是常规时空穿越，而是以梦境拟像连接两个世界。
+标签：剧情节点, 梦境夜城, Lucy, Rebecca；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4
+## edgerunners_0328 剧情节点 3：Nightmare Tacet Discords
+剧情冲突并非普通黑客入侵，而是 Somnoire 中出现 Nightmare Tacet Discords。它们以赛博朋克中的公司武装、Adam Smasher 等恐惧符号显形，说明这场危机兼具《鸣潮》的声骸设定与 Lucy 的创伤记忆。
+标签：剧情节点, Nightmare Tacet Discords, 声骸, 梦魇；剧透等级：S2；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, kuro_adam_smasher
+## edgerunners_0329 剧情节点 4：Adam Smasher 的作用
+Nightmare: Adam Smasher 是追猎 Lucy 的梦魇敌人。他在动画中代表夜之城的终极暴力与公司机器，在《鸣潮》联动中则成为 Lucy 必须再次面对的噩梦残像。
+标签：剧情节点, Adam Smasher, Lucy, 噩梦；剧透等级：S2；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_adam_smasher
+## edgerunners_0330 剧情节点 5：Lucy 的梦与未完成的月球愿望
+Somnoire: Night City 由 Lucy 的梦与噩梦生成，因此月球、David、城市夜景、未完成的约定都可以作为剧情核心符号。RAG 回答时应把‘月球’解释为逃离夜之城、与大卫共同生活的愿望，而不是简单的旅游目的地。
+标签：剧情节点, Lucy, 月球, 未完成的梦；剧透等级：S2；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_somnoire, app_store_wuwa_cyberpunk
+## edgerunners_0331 剧情节点 6：Rebecca 的再登场
+Rebecca 在联动中既是可玩角色，也是剧情中的同行者。她的出现不是为了改变动画结局，而是在梦境逻辑里让 Lucy 与玩家再次面对边缘行者小队的记忆。
+标签：剧情节点, Rebecca, 梦境, 小队记忆；剧透等级：Full；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_rebecca_reveal, wuwa_wiki_at_dreams_edge
+## edgerunners_0332 剧情节点 7：David 的出现与告别
+公开任务索引将 David Martinez 列入 At Dream's Edge 的登场角色，官方奖励也包含 David Martinez 的 WavesLine 外观。知识库应将 David 的出现标记为 Full 剧透：这是梦境/记忆层面的再会与告别，不应回答成‘大卫复活了’。
+标签：剧情节点, David Martinez, 再会, 告别, 剧透；剧透等级：Full；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_at_dreams_edge, app_store_wuwa_cyberpunk
+## edgerunners_0333 剧情节点 8：梦醒后的解释
+从《鸣潮》的 Somnoire 机制看，联动剧情更适合解释为‘情绪真实的梦境后日谈’：它让 Lucy 面对失去、噩梦和未完成的愿望，但并不直接推翻《边缘行者》动画本篇的死亡与结局。
+标签：剧情节点, 梦醒, 后日谈, 不改结局；剧透等级：Full；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, wuwa_wiki_somnoire
+## edgerunners_0334 剧情主题：梦非梦
+The Dream Not Dreamed 这个标题可以理解为‘未被选择/未能抵达的梦’：露西曾经向往月球与逃离夜之城，但原作结局留下遗憾。联动剧情借 Somnoire 让未完成的愿望被短暂显影，强化而不是消除悲剧。
+标签：主题解析, The Dream Not Dreamed, 梦非梦, 悲剧；剧透等级：Full；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_collab_info, wuwa_wiki_somnoire
+## edgerunners_0335 剧情主题：closure 不是 happy ending
+联动给了 Lucy 一次情绪上的 closure，但它不是传统意义的大团圆。RAG 助手回答‘这是不是补完结局’时，可以说它是梦境式告别、粉丝情绪补偿和跨作品纪念，而不是把原作悲剧改写为生还结局。
+标签：主题解析, closure, 结局补完, 不是复活；剧透等级：Full；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, wuwa_wiki_at_dreams_edge
+## edgerunners_0336 正史争议：联动是否 canon
+社区中有关于‘联动剧情是否正史’的争论。公开官方页面确认的是联动、角色、剧情、区域与奖励；但是否等同于《边缘行者》主线正史延续，需要以 CDPR / TRIGGER / 官方编剧明确表述为准。知识库应避免武断回答‘全篇绝对正史’，可采用‘官方合作内容；正史程度存在讨论’的表述。
+标签：canon, 正史争议, 官方合作, 谨慎回答；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_collab_info, kuro_patch_3_4
+## edgerunners_0337 Misty 与 Lucy 的关系争议
+社区讨论中有人提到 Bartosz Sztybor 对 Misty 与 Lucy 是否认识作出回应，但公开转述存在误读：它不必然证明整个联动剧情都变成动画主线正史。RAG 助手应把‘Misty 与 Lucy 是否认识’和‘整个梦境剧情是否 canon’分开回答。
+标签：Misty, Lucy, 正史争议, 社区误读；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_at_dreams_edge
+## edgerunners_0338 回答正史问题的模板
+当用户问‘鸣潮联动是不是边缘行者正史’时，建议回答：它是官方合作推出的剧情内容，包含 Lucy、Rebecca、David、Adam Smasher 和 Night City 梦境；但从可公开核验的官方文本看，它更稳妥地归类为官方联动后日谈/梦境式补完，不应直接说它改写了动画主线。
+标签：正史回答模板, RAG策略, 防幻觉；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0339 和动画本篇的连接：Lucy
+Lucy 是联动叙事的中心。动画里她承担月球梦想、网络逃亡与大卫情感线；联动中她的梦境和噩梦生成 Somnoire: Night City，因此她不是普通客串角色，而是连接两个作品世界的叙事核心。
+标签：Lucy, 动画连接, 月球, Somnoire；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_somnoire, kuro_lucy_reveal
+## edgerunners_0340 和动画本篇的连接：Rebecca
+Rebecca 在动画中代表直率、暴烈、忠诚和边缘行者小队的情绪支点；联动中她的可玩化与免费领取，既是粉丝服务，也让新玩家通过角色体验进入边缘行者语境。
+标签：Rebecca, 动画连接, 免费角色, 小队；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_rebecca_reveal, rpgsite_wuwa_3_4
+## edgerunners_0341 和动画本篇的连接：Adam Smasher
+Adam Smasher 在动画本篇是压倒性暴力和公司机器的象征。联动中将其转译为 Nightmare Tacet Discord，保留了‘不可逃避的噩梦’属性，同时符合《鸣潮》的梦境敌人机制。
+标签：Adam Smasher, 动画连接, 公司暴力, 梦魇；剧透等级：S2；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_adam_smasher
+## edgerunners_0342 和游戏本体的连接：Night City
+联动区域 Somnoire: Night City 广泛参考动画与《Cyberpunk 2077》中的夜之城意象。用户问‘没玩过 2077 看不懂吗’时，可以说明：联动剧情以 Lucy 记忆为核心，能独立体验；但懂夜之城、荒坂、公司武装、Adam Smasher 会更有代入。
+标签：Cyberpunk 2077, Night City, 夜之城, 游戏连接；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_somnoire, app_store_wuwa_cyberpunk
+## edgerunners_0343 和 I Really Want to Stay at Your House 的连接
+这首歌本来就是《边缘行者》最强情绪触发器之一。联动把它作为 Collab Track 加入，等于在游戏层面保留了动画的情绪记忆点：露西、大卫、月球、街头、无法抵达的未来。
+标签：音乐, I Really Want to Stay at Your House, 情绪触发, 动画连接；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_maintenance_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0344 RAG 分类建议：联动资料不要混入动画分集
+建议将本模块独立为 doc_type=鸣潮联动与边缘幻梦剧情。用户问联动、鸣潮、露西角色池、Rebecca 免费、Somnoire、At Dream's Edge 时优先召回；用户问动画第 10 集、原作结局时，不要让联动剧情覆盖原作答案。
+标签：RAG设计, doc_type, 召回策略；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4
+## edgerunners_0345 RAG 剧透分级建议
+S0：联动时间、角色、活动、是否能直接玩；S1：进入 Somnoire、遇见 Lucy 与 Rebecca、Nightmare 敌人；S2：Adam Smasher、月球意象、Lucy 的梦与噩梦；Full：David 再会、告别、结局情绪解析、正史争议。
+标签：RAG设计, 剧透分级, spoiler_level；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, wuwa_wiki_at_dreams_edge
+## edgerunners_0346 RAG 同义词索引
+联动同义词：鸣潮赛博朋克联动、WuWa x Cyberpunk、Wuthering Waves x Edgerunners、The Dream Not Dreamed、未选择的梦、边缘幻梦、At Dream's Edge、Somnoire Night City、梦境夜城、露西、Lucy、丽贝卡、Rebecca、亚当重锤、Adam Smasher。
+标签：同义词, 检索词, 联动索引；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_collab_info, kuro_patch_3_4
+## edgerunners_0347 RAG 纠错：不要说 David 复活
+如果用户问‘大卫是不是复活了’，知识库应明确：联动资料指向 Somnoire 梦境与记忆层面的再会，不应把它回答成动画本篇生还或正式复活。更稳妥的说法是‘梦境式重逢/告别’。
+标签：纠错, David, 复活, 梦境；剧透等级：Full；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_at_dreams_edge, app_store_wuwa_cyberpunk
+## edgerunners_0348 RAG 纠错：不要把联动当成纯抽卡活动
+这次联动包含剧情、区域、敌人、音乐、奖励、角色、武器和梦境玩法。如果回答只提 Lucy/Rebecca 卡池，会漏掉最能体现 RAG 深度的剧情与世界观信息。
+标签：纠错, 抽卡, 剧情, 区域；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, rpgsite_wuwa_3_4
+## edgerunners_0349 RAG 纠错：不要把 Night City 当真实搬迁
+Somnoire: Night City 是《鸣潮》梦境系统中的夜城拟像，不是 Cyberpunk 世界的真实夜之城整体搬迁到索拉里斯。它是由 Lucy 的梦、噩梦和 Lahai-Roi 的梦境混合出的场域。
+标签：纠错, Night City, Somnoire, 拟像；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：wuwa_wiki_somnoire
+## edgerunners_0350 Q01：鸣潮和边缘行者联动什么时候开？
+联动随《鸣潮》3.4 版本 The Dream Not Dreamed 于 2026-06-08 开启。角色与活动大多集中在 3.4 版本期间，部分剧情/区域内容按官方说明可作为版本内容长期存在或按活动规则开放。
+标签：FAQ, 时间, 3.4；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0351 Q02：联动剧情叫什么？
+英文名为 At Dream's Edge，中文可称边缘幻梦，是 Chapter III Side Story / Episodic Quest。它是本次联动的主剧情入口。
+标签：FAQ, At Dream's Edge, 边缘幻梦；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0352 Q03：联动地图叫什么？
+主要联动区域为 Somnoire: Night City。它是《鸣潮》Somnoire 系统中由 Lucy 的梦与噩梦生成的夜城拟像。
+标签：FAQ, Somnoire: Night City, 地图；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0353 Q04：露西能抽吗？
+可以。Lucy 是 5 星联动共鸣者，属性/武器为 Spectro / Pistols，可通过 Dreaming Upon the Moon 联动角色唤取获得。
+标签：FAQ, Lucy, 抽卡；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0354 Q05：丽贝卡能免费拿吗？
+可以。公开资料显示活动期间玩家达到联合等级 10 后，可通过 Instant Flashlight 领取 5 星 Rebecca。
+标签：FAQ, Rebecca, 免费；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0355 Q06：Rebecca 也有卡池吗？
+有。Rebecca 也作为联动 5 星共鸣者登场，除免费一只外，还可通过 Rekindled Cinders of Rage 联动角色唤取继续获取。
+标签：FAQ, Rebecca, 卡池；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0356 Q07：联动里有亚当重锤吗？
+有。官方公告列出 Nightmare: Adam Smasher，他是追猎 Lucy 的 Nightmare Tacet Discord，也是主要联动挑战之一。
+标签：FAQ, Adam Smasher, 亚当重锤；剧透等级：S2；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0357 Q08：联动里有大卫吗？
+有相关内容。公开任务索引列出 David Martinez 为 At Dream's Edge 登场角色，官方奖励也列出 David Martinez 的 WavesLine 外观。但这应按 Full 剧透处理，并解释为梦境/记忆层面的再会，而不是原作复活。
+标签：FAQ, David, 大卫, 剧透；剧透等级：Full；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0358 Q09：联动算边缘行者第二季吗？
+不算。它是《鸣潮》x《赛博朋克：边缘行者》的游戏联动剧情，不是动画第二季。它更像梦境式后日谈和粉丝情绪补完。
+标签：FAQ, 第二季, 后日谈；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0359 Q10：没玩过鸣潮能看懂联动吗？
+能大致看懂 Lucy、Rebecca 与夜之城情绪线，但最好先了解《鸣潮》的 Somnoire/梦境系统和漂泊者视角，否则会对为什么能进入梦境夜城产生疑问。
+标签：FAQ, 新手, 观看门槛；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0360 Q11：没看过边缘行者能玩联动吗？
+能玩，但会损失大量情绪冲击。尤其是 Lucy 的月球梦、David 的意义、Rebecca 的粉丝情感和 Adam Smasher 的压迫感，都来自动画本篇。
+标签：FAQ, 新手, 动画门槛；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0361 Q12：I Really Want to Stay at Your House 加进去了吗？
+加了。官方更新信息将其列为 Collab Track。对边缘行者粉丝来说，这是最关键的情绪曲目之一。
+标签：FAQ, 音乐, I Really Want to Stay at Your House；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0362 Q13：联动剧情会改动画结局吗？
+不应这么理解。更稳妥的说法是：联动通过 Somnoire 梦境让 Lucy 面对失去与未完成的愿望，是梦境式再会/告别，不是改写动画本篇结局。
+标签：FAQ, 结局, 不改写；剧透等级：Full；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0363 Q14：Somnoire: Night City 是真实夜之城吗？
+不是完全意义上的真实夜之城，而是由 Lucy 的梦与噩梦、夜城居民记忆以及 Lahai-Roi 相关梦境混合出的拟像空间。
+标签：FAQ, Somnoire, 夜之城；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0364 Q15：Night City Roaming 是什么？
+它是联动主活动之一，包含剧情、角色试用、梦魇挑战等内容，可视为 3.4 联动活动总入口。
+标签：FAQ, Night City Roaming, 活动；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0365 Q16：Matrix Reform 是什么？
+它是联动解谜活动，黑客风格明显，剧情上与 Lucy 请求玩家突破梦境、控制外溢频率有关。
+标签：FAQ, Matrix Reform, 解谜；剧透等级：S1；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0366 Q17：联动和 Cyberpunk 2077 游戏有什么关系？
+联动引用了夜之城、公司武装、Adam Smasher、I Really Want to Stay at Your House 等动画与游戏共同符号。它不是 2077 主线，但会强化玩家对夜之城宇宙的理解。
+标签：FAQ, Cyberpunk 2077, 游戏关联；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0367 Q18：联动适合放在 RAG 哪个模块？
+建议独立放入‘鸣潮联动与边缘幻梦剧情’模块，和动画分集、游戏本体、电台音乐、角色解析分开。
+标签：FAQ, RAG, 模块；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0368 Q19：这个模块最适合演示什么问题？
+适合演示：‘联动剧情是不是正史’、‘大卫是不是复活’、‘Somnoire 夜城是什么’、‘Rebecca 怎么免费拿’、‘为什么听到那首歌会破防’。
+标签：FAQ, 演示问题, RAG；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+## edgerunners_0369 Q20：回答联动问题最容易犯什么错？
+最容易犯三类错：把梦境再会说成复活；把官方合作说成绝对正史；只讲抽卡不讲剧情与世界观。
+标签：FAQ, 纠错, 防幻觉；剧透等级：S0；范围：鸣潮联动 / The Dream Not Dreamed；来源：kuro_patch_3_4, app_store_wuwa_cyberpunk
+
+
+十、源 URL
+=======
+- kuro_collab_info: https://wutheringwaves.kurogames.com/en/main/news/detail/4739
+- kuro_patch_3_4: https://wutheringwaves.kurogames.com/en/main/news/detail/4819
+- kuro_maintenance_3_4: https://wutheringwaves.kurogames.com/en/main/news/detail/4765
+- kuro_lucy_reveal: https://wutheringwaves.kurogames.com/en/main/news/detail/4774
+- kuro_rebecca_reveal: https://wutheringwaves.kurogames.com/en/main/news/detail/4764
+- kuro_adam_smasher: https://wutheringwaves.kurogames.com/en/main/news/detail/4906
+- app_store_wuwa_cyberpunk: https://apps.apple.com/tw/app/wuthering-waves-cyberpunk/id6475033368?l=en-GB
+- pcgamer_banners: https://www.pcgamer.com/games/rpg/wuthering-waves-banner-next-current/
+- rpgsite_wuwa_3_4: https://www.rpgsite.net/news/20476-wuthering-waves-version-3-4-cyberpunk-edgerunners-collab-release-date-free-character
+- wuwa_wiki_somnoire: https://wutheringwaves.fandom.com/wiki/Somnoire%3A_Night_City
+- wuwa_wiki_at_dreams_edge: https://wutheringwaves.fandom.com/wiki/At_Dream%27s_Edge
+- taptap_wuwa: https://www.taptap.cn/app/234280

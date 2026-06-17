@@ -1,0 +1,23 @@
+collection_name : agent
+persist_directory : storage/chroma_db
+k :  8
+candidate_k : 32
+min_relevance_score : 0.0
+rrf_k : 60
+bm25_k1 : 1.5
+bm25_b : 0.75
+cross_encoder_rerank_enabled : false
+cross_encoder_model_name : BAAI/bge-reranker-base
+cross_encoder_top_n : 20
+data_path : data
+md5_hex_store : md5.txt
+manifest_store : storage\knowledge_manifest.json
+allow_knowledge_file_type : ["txt","pdf","md","markdown"]
+
+chunk_size : 240
+chunk_overlap : 40
+txt_chunk_size : 220
+txt_chunk_overlap : 40
+pdf_chunk_size : 420
+pdf_chunk_overlap : 60
+separators : ["\n\n","。",".","?","？","!"," ",""]

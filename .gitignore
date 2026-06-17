@@ -1,0 +1,77 @@
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Runtime storage generated locally
+storage/
+md5.txt
+
+# Chroma / vector database artifacts
+rag/chroma_db/
+agent/tools/chroma_db/
+*.sqlite
+*.sqlite3
+*.db
+
+# Streamlit runtime
+.streamlit/secrets.toml
+storage/streamlit_*.log
+
+# Ragas / local evaluation outputs
+evals/ragas_latest_result.json
+evals/latest_result.json
+evals/latest_quality_result.json
+evals/history/
+
+# Optional large model/cache folders
+models/
+model_cache/
+.cache/
+
+# Node artifacts used by MCP / frontend tooling
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Keep project knowledge files under data/ tracked.
+# If future raw data becomes too large or private, ignore it explicitly here.

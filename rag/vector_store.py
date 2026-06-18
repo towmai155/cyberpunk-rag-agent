@@ -2,6 +2,7 @@ from langchain_chroma import Chroma
 from chromadb.config import Settings
 from utils.config_handler import chroma_conf
 from model.factory import get_embedding_model
+from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from utils.path_tool import get_abs_path
 import hashlib
@@ -32,16 +33,27 @@ class VectorStoreService:
         self.manifest_store = get_abs_path(
             chroma_conf.get('manifest_store', os.path.join(self.persist_directory, 'knowledge_manifest.json'))
         )
+        self.parent_store = get_abs_path(
+            chroma_conf.get('parent_store', os.path.join(self.persist_directory, 'parent_docs.json'))
+        )
+        self.use_parent_context = chroma_conf.get("use_parent_context", False)
         os.makedirs(self.persist_directory, exist_ok=True)
         manifest_dir = os.path.dirname(self.manifest_store)
         if manifest_dir:
             os.makedirs(manifest_dir, exist_ok=True)
+        parent_store_dir = os.path.dirname(self.parent_store)
+        if parent_store_dir:
+            os.makedirs(parent_store_dir, exist_ok=True)
         # 关闭 Chroma 匿名遥测，避免无关 telemetry 报错干扰。
         os.environ.setdefault("ANONYMIZED_TELEMETRY", "False")
         self.vector_store = self._create_vector_store()
         self.default_splitter = self._build_splitter(
             chunk_size=chroma_conf['chunk_size'],
             chunk_overlap=chroma_conf['chunk_overlap'],
+        )
+        self.parent_splitter = self._build_splitter(
+            chunk_size=chroma_conf.get('parent_chunk_size', chroma_conf['chunk_size'] * 3),
+            chunk_overlap=chroma_conf.get('parent_chunk_overlap', chroma_conf['chunk_overlap'] * 2),
         )
         self.txt_splitter = self._build_splitter(
             chunk_size=chroma_conf.get('txt_chunk_size', chroma_conf['chunk_size']),
@@ -101,12 +113,30 @@ class VectorStoreService:
         with open(self.manifest_store, "w", encoding="utf-8") as f:
             json.dump(manifest, f, ensure_ascii=False, indent=2, sort_keys=True)
 
+    def _load_parent_store(self) -> dict:
+        """读取 parent chunk 存储，用于 child 命中后回填更完整上下文。"""
+        if not os.path.exists(self.parent_store):
+            return {}
+        try:
+            with open(self.parent_store, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return data if isinstance(data, dict) else {}
+        except Exception as e:
+            logger.warning(f"读取 parent 文档存储失败，将按空存储处理: {str(e)}")
+            return {}
+
+    def _save_parent_store(self, parent_store: dict):
+        """落盘 parent chunk 存储。"""
+        with open(self.parent_store, "w", encoding="utf-8") as f:
+            json.dump(parent_store, f, ensure_ascii=False, indent=2, sort_keys=True)
+
     @staticmethod
-    def _manifest_item(md5_hex: str, chunk_count: int) -> dict:
+    def _manifest_item(md5_hex: str, chunk_count: int, parent_count: int = 0) -> dict:
         """构造单个知识文件的 manifest 记录。"""
         return {
             "md5": md5_hex,
             "chunk_count": chunk_count,
+            "parent_count": parent_count,
             "updated_at": datetime.now().isoformat(timespec="seconds"),
         }
 
@@ -139,6 +169,12 @@ class VectorStoreService:
         """基于来源、位置和内容哈希生成稳定 chunk ID。"""
         digest = hashlib.md5(content.encode("utf-8")).hexdigest()[:12]
         return f"{source}:{chunk_index}:{digest}"
+
+    @staticmethod
+    def _build_parent_id(source: str, parent_index: int, content: str) -> str:
+        """基于来源、parent 位置和内容哈希生成稳定 parent ID。"""
+        digest = hashlib.md5(content.encode("utf-8")).hexdigest()[:12]
+        return f"{source}:parent:{parent_index}:{digest}"
 
     def _delete_documents_by_source(self, source: str):
         """按来源删除旧切片，保证文件更新时不会残留历史版本。"""
@@ -173,6 +209,14 @@ class VectorStoreService:
         for source in stale_sources:
             self._delete_documents_by_source(source)
             manifest.pop(source, None)
+            if self.use_parent_context:
+                parent_store = self._load_parent_store()
+                parent_store = {
+                    parent_id: item
+                    for parent_id, item in parent_store.items()
+                    if (item.get("metadata") or {}).get("source") != source
+                }
+                self._save_parent_store(parent_store)
             logger.info(f"已清理已删除知识文件遗留的切片: {source}")
         self._save_manifest(manifest)
 
@@ -203,9 +247,60 @@ class VectorStoreService:
                 os.remove(self.manifest_store)
             except Exception as e:
                 logger.warning(f"删除知识库 manifest 失败: {str(e)}")
+        if os.path.exists(self.parent_store):
+            try:
+                os.remove(self.parent_store)
+            except Exception as e:
+                logger.warning(f"删除 parent 文档存储失败: {str(e)}")
 
         self.vector_store = self._create_vector_store()
         logger.info("向量库重建完成")
+
+    def _delete_parent_documents_by_source(self, source: str, parent_store: dict) -> dict:
+        """按来源清理 parent 文档存储。"""
+        return {
+            parent_id: item
+            for parent_id, item in parent_store.items()
+            if (item.get("metadata") or {}).get("source") != source
+        }
+
+    def _split_parent_child_documents(self, documents: list, path: str, source: str) -> tuple[list, dict]:
+        """把原始文档拆成 parent/child 两层：child 入向量库，parent 用于最终回答上下文。"""
+        parent_documents = self.parent_splitter.split_documents(documents)
+        child_documents = []
+        parent_items = {}
+
+        for parent_index, parent_doc in enumerate(parent_documents):
+            parent_id = self._build_parent_id(source, parent_index, parent_doc.page_content)
+            parent_metadata = dict(parent_doc.metadata or {})
+            parent_metadata["source"] = source
+            parent_metadata["source_type"] = os.path.splitext(path)[1].lstrip(".").lower()
+            parent_metadata["parent_index"] = parent_index
+            parent_metadata["parent_id"] = parent_id
+            parent_items[parent_id] = {
+                "page_content": parent_doc.page_content,
+                "metadata": parent_metadata,
+            }
+
+            children = self._get_splitter(path).split_documents([parent_doc])
+            for child_index, child_doc in enumerate(children):
+                child_doc.metadata.update(parent_metadata)
+                child_doc.metadata["child_index"] = child_index
+                child_documents.append(child_doc)
+
+        return child_documents, parent_items
+
+    def get_parent_document(self, parent_id: str) -> Document | None:
+        """按 parent_id 读取 parent 文档。不存在时返回 None。"""
+        if not parent_id:
+            return None
+        item = self._load_parent_store().get(parent_id)
+        if not item:
+            return None
+        return Document(
+            page_content=item.get("page_content", ""),
+            metadata=dict(item.get("metadata") or {}),
+        )
 
     def load_document(self, force_reload=False):
         """
@@ -226,11 +321,16 @@ class VectorStoreService:
         )
         self._cleanup_stale_documents(allowed_files_path)
         manifest = self._sync_manifest_from_legacy_md5(self._load_manifest())
+        parent_store = self._load_parent_store() if self.use_parent_context else {}
 
         for path in allowed_files_path:
             md5_hex = get_file_md5_hex(path)
             relative_source = os.path.relpath(path, get_abs_path(chroma_conf["data_path"]))
-            if not force_reload and manifest.get(relative_source, {}).get("md5") == md5_hex:
+            has_parent_store = (
+                not self.use_parent_context
+                or any((item.get("metadata") or {}).get("source") == relative_source for item in parent_store.values())
+            )
+            if not force_reload and manifest.get(relative_source, {}).get("md5") == md5_hex and has_parent_store:
                 logger.info(f"文件{path}未发生变化，跳过加载")
                 continue
             try:
@@ -245,11 +345,23 @@ class VectorStoreService:
                 for document in documents:
                     document.metadata["source"] = relative_source
                     document.metadata["source_type"] = os.path.splitext(path)[1].lstrip(".").lower()
-                split_document = self._get_splitter(path).split_documents(documents)
+                parent_items = {}
+                if self.use_parent_context:
+                    split_document, parent_items = self._split_parent_child_documents(
+                        documents,
+                        path,
+                        relative_source,
+                    )
+                else:
+                    split_document = self._get_splitter(path).split_documents(documents)
                 if not split_document:
                     logger.warning(f"文件{path}没有被切分成任何文档，可能是内容过短或切分参数不合适")
                     continue
                 self._delete_documents_by_source(relative_source)
+                if self.use_parent_context:
+                    parent_store = self._delete_parent_documents_by_source(relative_source, parent_store)
+                    parent_store.update(parent_items)
+                    self._save_parent_store(parent_store)
                 for index, document in enumerate(split_document):
                     document.metadata["chunk_index"] = index
                 ids = [
@@ -267,7 +379,7 @@ class VectorStoreService:
                         split_document[i:i + batch_size],
                         ids=ids[i:i + batch_size],
                     )
-                manifest[relative_source] = self._manifest_item(md5_hex, len(split_document))
+                manifest[relative_source] = self._manifest_item(md5_hex, len(split_document), len(parent_items))
                 self._save_manifest(manifest)
                 logger.info(f"文件{path}已成功加载到向量数据库中")
             except Exception as e:

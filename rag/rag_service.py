@@ -35,6 +35,7 @@ class RagSummarizeService(object):
         self.rrf_k = chroma_conf.get("rrf_k", 60)
         self.bm25_k1 = chroma_conf.get("bm25_k1", 1.5)
         self.bm25_b = chroma_conf.get("bm25_b", 0.75)
+        self.use_parent_context = chroma_conf.get("use_parent_context", False)
         self.cross_encoder_enabled = (
             chroma_conf.get("cross_encoder_rerank_enabled", False)
             or os.getenv("ENABLE_CROSS_ENCODER_RERANK", "").lower() in {"1", "true", "yes", "on"}
@@ -360,6 +361,38 @@ class RagSummarizeService(object):
                 break
         return selected
 
+    def _expand_to_parent_docs(self, child_docs: list[Document]) -> list[Document]:
+        """把命中的 child chunk 映射回 parent chunk，让模型拿到更完整上下文。"""
+        if not self.use_parent_context:
+            return child_docs
+
+        parent_docs = []
+        seen_parent_ids = set()
+        for child_doc in child_docs:
+            parent_id = (child_doc.metadata or {}).get("parent_id")
+            if not parent_id or parent_id in seen_parent_ids:
+                continue
+            parent_doc = self.vector_store.get_parent_document(parent_id)
+            if parent_doc is None or not parent_doc.page_content:
+                continue
+            parent_doc.metadata.update(
+                {
+                    "matched_child_chunk_index": child_doc.metadata.get("chunk_index"),
+                    "matched_child_index": child_doc.metadata.get("child_index"),
+                    "dense_rank": child_doc.metadata.get("dense_rank"),
+                    "bm25_rank": child_doc.metadata.get("bm25_rank"),
+                    "dense_score": child_doc.metadata.get("dense_score"),
+                    "bm25_score": child_doc.metadata.get("bm25_score"),
+                    "rrf_score": child_doc.metadata.get("rrf_score"),
+                    "rerank_score": child_doc.metadata.get("rerank_score"),
+                    "cross_encoder_score": child_doc.metadata.get("cross_encoder_score"),
+                }
+            )
+            parent_docs.append(parent_doc)
+            seen_parent_ids.add(parent_id)
+
+        return parent_docs or child_docs
+
     @staticmethod
     def _doc_key(doc: Document) -> tuple:
         metadata = doc.metadata or {}
@@ -500,10 +533,12 @@ class RagSummarizeService(object):
         bm25_candidates = self._bm25_search_docs(query, self.candidate_k)
         scored_docs = self._merge_by_rrf(query, candidates, bm25_candidates)
         scored_docs = self._cross_encoder_rerank(query, scored_docs)
-        docs = self._select_diverse_docs(scored_docs)
+        child_docs = self._select_diverse_docs(scored_docs)
+        docs = self._expand_to_parent_docs(child_docs)
         logger.info(
             f"RAG检索完成，原始query={query}，扩展query={expanded_query}，"
-            f"向量候选数={len(candidates)}，BM25候选数={len(bm25_candidates)}，融合候选数={len(scored_docs)}，入选数={len(docs)}"
+            f"向量候选数={len(candidates)}，BM25候选数={len(bm25_candidates)}，融合候选数={len(scored_docs)}，"
+            f"child入选数={len(child_docs)}，最终上下文数={len(docs)}"
         )
         return docs
 
@@ -540,11 +575,17 @@ class RagSummarizeService(object):
             source = doc.metadata.get("source", "未知来源")
             page = doc.metadata.get("page")
             chunk_index = doc.metadata.get("chunk_index")
+            parent_index = doc.metadata.get("parent_index")
+            matched_child_chunk_index = doc.metadata.get("matched_child_chunk_index")
             location_parts = [f"来源={source}"]
             if page is not None:
                 location_parts.append(f"页码={page}")
+            if parent_index is not None:
+                location_parts.append(f"父块={parent_index}")
             if chunk_index is not None:
                 location_parts.append(f"切片={chunk_index}")
+            if matched_child_chunk_index is not None:
+                location_parts.append(f"命中子切片={matched_child_chunk_index}")
             context_parts.append(
                 f"[参考资料{counter}] {' | '.join(location_parts)}\n{doc.page_content.strip()}"
             )

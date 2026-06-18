@@ -11,6 +11,7 @@
  -> BM25 关键词召回
  -> RRF 排名融合
  -> Cross-Encoder 可选精排
+ -> Parent-Child 上下文回填
  -> 按问题类型做轻量 source boost
  -> 多样性去重
  -> 返回 top-k chunk 给总结模型
@@ -102,6 +103,47 @@ ENABLE_CROSS_ENCODER_RERANK=1
 
 它的目标是提高最终上下文精确率和答案相关性。
 
+## Parent-Child Retrieval
+
+当前项目接入轻量版 Parent-Child Retrieval，不替换原有 Dense + BM25 + RRF + Cross-Encoder 链路。
+
+设计目标：
+
+- child chunk 用于检索，保持命中精度。
+- parent chunk 用于最终回答，提供更完整上下文。
+
+入库流程：
+
+```text
+原始文档
+ -> parent splitter 生成较大 parent chunk
+ -> child splitter 将每个 parent 再切成较小 child chunk
+ -> child chunk 写入 Chroma
+ -> child metadata 保存 parent_id
+ -> parent 文本保存到 storage/parent_docs.json
+```
+
+检索流程：
+
+```text
+Dense / BM25 / RRF / Cross-Encoder 命中 child chunk
+ -> 根据 parent_id 找回 parent chunk
+ -> 去重 parent
+ -> 将 parent chunk 作为最终上下文交给模型
+```
+
+当前配置：
+
+```yaml
+use_parent_context: true
+parent_chunk_size: 720
+parent_chunk_overlap: 120
+txt_chunk_size: 220
+txt_chunk_overlap: 40
+```
+
+这样做的好处是：检索仍然用较短 child 保持精准，生成回答时使用较长 parent 避免上下文过碎，尤其适合分集摘要、角色弧光和设定解释类问题。
+
 ## Source Boost
 
 RRF 后会根据问题类型做轻量来源加权：
@@ -131,6 +173,9 @@ candidate_k: 32
 rrf_k: 60
 bm25_k1: 1.5
 bm25_b: 0.75
+use_parent_context: true
+parent_chunk_size: 720
+parent_chunk_overlap: 120
 cross_encoder_rerank_enabled: false
 cross_encoder_model_name: BAAI/bge-reranker-base
 cross_encoder_top_n: 20

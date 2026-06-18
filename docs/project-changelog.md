@@ -4,6 +4,16 @@
 
 ## 2026-06-17
 
+### Parent-Child Retrieval 接入
+
+- 新增轻量版 Parent-Child Retrieval。
+- 入库时将原始文档先切成较大的 parent chunk，再将 parent 切成较小 child chunk。
+- Chroma 中仍写入 child chunk，用于 Dense / BM25 / RRF / Cross-Encoder 检索。
+- child metadata 保存 `parent_id`，最终回答前根据 `parent_id` 回填 parent chunk。
+- parent 文本保存到 `storage/parent_docs.json`，该文件属于本地运行产物，不提交 Git。
+- 目标是保持 child 检索精度，同时让模型拿到更完整上下文，改善分集摘要、角色解析和设定解释类问题。
+- 同步移除旧 MySQL 依赖 `pymysql`；当前项目不再使用 MySQL。
+
 ### Filesystem MCP 接入
 
 - 在 `config/agent.yaml` 中接入 `@modelcontextprotocol/server-filesystem`。

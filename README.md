@@ -14,6 +14,7 @@
 - 支持 Dense Embedding + BM25s/jieba 混合召回。
 - 支持 RRF 融合排序。
 - 支持可选 Cross-Encoder Rerank。
+- 支持轻量版 Parent-Child Retrieval，使用 child chunk 检索、parent chunk 生成回答。
 - 支持 Ragas 全量评测，记录 Faithfulness、Answer Relevancy、Context Recall、Context Precision。
 - 支持 Streamlit 前端和 FastAPI 服务入口。
 - 支持知识库增量同步、陈旧切片清理和 Chroma 索引异常自动修复。

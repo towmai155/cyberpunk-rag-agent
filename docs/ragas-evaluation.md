@@ -35,6 +35,8 @@ python scripts/evaluate_ragas.py --limit 2 --batch-size 1
 
 检索策略：Dense Embedding + bm25s + jieba + RRF + Cross-Encoder Rerank
 
+说明：该结果为接入 Parent-Child Retrieval 前的最新全量评测结果。Parent-Child Retrieval 已接入，后续需要重新跑一轮全量 Ragas 来确认真实分数变化。
+
 | Metric | Score |
 | --- | ---: |
 | Faithfulness | 0.9607 |

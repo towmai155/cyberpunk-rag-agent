@@ -12,8 +12,12 @@ cross_encoder_top_n : 20
 data_path : data
 md5_hex_store : md5.txt
 manifest_store : storage\knowledge_manifest.json
+parent_store : storage\parent_docs.json
 allow_knowledge_file_type : ["txt","pdf","md","markdown"]
 
+use_parent_context : true
+parent_chunk_size : 720
+parent_chunk_overlap : 120
 chunk_size : 240
 chunk_overlap : 40
 txt_chunk_size : 220

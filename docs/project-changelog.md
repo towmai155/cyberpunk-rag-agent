@@ -2,6 +2,23 @@
 
 这个文档记录项目每次新增的重要能力。以后有新模块、新工具、新评测、新部署方式，都追加到这里，方便写简历和复盘。
 
+## 2026-06-18
+
+### Parent-Child 后 Ragas 全量评测
+
+- 开启 Cross-Encoder Rerank 后重新跑完 35 条 Golden Test Set。
+- 当前策略为 Parent-Child Retrieval + Dense Embedding + bm25s + jieba + RRF + Cross-Encoder Rerank。
+- 最新全量结果：
+  - Faithfulness: `0.9556`
+  - Answer Relevancy: `0.6562`
+  - Context Recall: `0.9143`
+  - Context Precision: `0.7704`
+  - Average: `0.8241`
+- 相比最初 Dense baseline：
+  - Context Recall: `0.3095 -> 0.9143`
+  - Average: `0.5995 -> 0.8241`
+- 评测历史已保留在 `docs/ragas-evaluation.md`，包含 Baseline、BM25 + RRF、Cross-Encoder、Parent-Child + Cross-Encoder 四轮结果。
+
 ## 2026-06-17
 
 ### Parent-Child Retrieval 接入
